@@ -1,0 +1,40 @@
+---
+title: "Our Report"
+author: "Tech Lab"
+date: "2024-05-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("data_prep.R")
+
+```
+
+## Section 1
+
+Introduction to Section 1 and its key concepts. We will be looking at the last 5 years of student numbers.
+
+### Figure 1: Student registrations from 2018 to 2022
+
+```{r fig 1, echo=FALSE, warning=FALSE, fig.alt="this is where we add alt text", out.width="100%"}
+
+fig_1 <- plot_ly(df_fig1,
+                 x = ~years,
+                 y = ~students,
+                 type = "bar",
+                 name = "Students",
+                 marker = list(color = "#00205b"),
+                 text = ~students,
+                 hovertemplate = ~paste0(years, " : ", students)) %>% 
+  layout(yaxis = list(title = ""),
+         xaxis = list(title = "Year"))
+
+fig_1 <- config(fig_1, displayModeBar = FALSE)
+
+fig_1
+
+```
+
+This is where we will add some commentary to explain the message conveyed by the chart.
