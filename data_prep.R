@@ -8,7 +8,7 @@ library(knitr)
 
 years <- c(2018, 2019, 2020, 2021, 2022, 2023, 2024)
 
-students <- c(145, 157, 161, 157, 163, 451, 500)
+students <- c(130, 157, 190, 157, 163, 451, 900)
 
 
 df_fig1 <- data.frame(years, students)
