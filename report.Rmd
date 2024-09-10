@@ -16,7 +16,7 @@ source("data_prep.R")
 
 Introduction to Section 1 and its key concepts. We will be looking at the last 5 years of student numbers.
 
-### Figure 1: Student registrations from 2018 to 2022
+### Figure 1: Student registrations from 2018 to 2024
 
 ```{r fig 1, echo=FALSE, warning=FALSE, fig.alt="this is where we add alt text", out.width="100%"}
 
@@ -29,7 +29,7 @@ fig_1 <- plot_ly(df_fig1,
                  text = ~diff,
                  textposition = "outside",
                  hovertemplate = ~paste0(years, " : ", students)) %>% 
-  layout(yaxis = list(title = ""),
+  layout(yaxis = list(title = "Nos of Students"),
          xaxis = list(title = "Year"))
 
 fig_1 <- config(fig_1, displayModeBar = FALSE)
