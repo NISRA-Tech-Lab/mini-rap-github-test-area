@@ -26,7 +26,8 @@ fig_1 <- plot_ly(df_fig1,
                  type = "bar",
                  name = "Students",
                  marker = list(color = "#00205b"),
-                 text = ~students,
+                 text = ~diff,
+                 textposition = "outside",
                  hovertemplate = ~paste0(years, " : ", students)) %>% 
   layout(yaxis = list(title = ""),
          xaxis = list(title = "Year"))
