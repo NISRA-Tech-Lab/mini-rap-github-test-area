@@ -45,7 +45,7 @@ fig_1
 This is where we will add some commentary to explain the message conveyed by the chart, isn't it pretty!  This year there were `r tot_individuals`. 
 
 
-```{r}
+```{r fig 2, echo=FALSE, warning=FALSE, fig.alt="this is where we add alt text", out.width="100%"}
 fig2 <- plot_ly(df_gender_ageband_allyrs,
                 x = ~year,
                 y = ~male_under_16,
