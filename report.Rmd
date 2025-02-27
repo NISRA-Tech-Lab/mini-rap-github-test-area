@@ -1,5 +1,5 @@
 ---
-title: "Our Report"
+title: "JM Report"
 author: "Tech Lab"
 date: "2024-05-01"
 output: html_document
@@ -25,16 +25,16 @@ fig_1 <- plot_ly(df_indivs_gender,
                  x = ~gender,
                  y = ~individuals,
                  type = "bar",
-                # orientation = "h"
-                name = "Gender",
-                marker = list(color = "#00205b"),
-                text = ~individuals,
-                textposition = "outside",
-                hovertemplate = ~paste0(gender, " : ", individuals)
+               #  orientation = "h"
+                 name = "Gender",
+                 marker = list(color = "#00205b"),
+                 text = ~individuals,
+                 textposition = "outside",
+                 hovertemplate = ~paste0(gender, " : ", individuals)
                 ) %>% 
- layout(yaxis = list(title = ""),
-       xaxis = list(title = "Gender",
-                     categoryorder = "total ascending"))
+  layout(yaxis = list(title = ""),
+         xaxis = list(title = "Gender",
+                      categoryorder = "total ascending"))
 
 fig_1 <- config(fig_1, displayModeBar = FALSE)
 
