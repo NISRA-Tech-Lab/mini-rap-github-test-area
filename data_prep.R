@@ -1,13 +1,13 @@
 # uncomment these lines if you need to install packages first.
 
-# install.packages("plotly")
-# install.packages("knitr")
+
 
 library(plotly)
 library(knitr)
 library(dplyr)
 library(janitor)
 library(tidyr)
+
 
 
 df_all_data <- data.frame(personid = c(75788, 60371, 57342, 47219, 13334, 12228,
