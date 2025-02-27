@@ -53,6 +53,9 @@ fig2 <- plot_ly(df_gender_ageband_allyrs,
                 type = "scatter",
                 mode = "lines",
                 line = list(color = "#b88700")) %>%
+  add_trace(y=~female_under_16,
+            name = "Female under 16",
+            line = list(color = 'blue')) %>% 
  
   layout(xaxis = list(gridcolor = "#fff",
                       showticklabels = TRUE,
@@ -60,7 +63,8 @@ fig2 <- plot_ly(df_gender_ageband_allyrs,
                       type = "date",
                       tickvals = ~unique(year),
                       tickformat = "%Y"),
-         yaxis = list(range = c(0, 10)))
+         yaxis = list(range = c(0, 10),
+                      title = ""))
 
 fig2 <- config(fig2, displayModeBar = FALSE)
 
