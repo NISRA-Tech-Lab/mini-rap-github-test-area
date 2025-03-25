@@ -44,6 +44,8 @@ fig_1
 
 This is where we will add some commentary to explain the message conveyed by the chart, isn't it pretty!  This year there were `r tot_individuals`. 
 
+## Section 2
+
 ### Figure 2: Gender by age band
 
 
