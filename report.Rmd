@@ -44,7 +44,7 @@ fig_1
 
 This is where we will add some commentary to explain the message conveyed by the chart, isn't it pretty!  This year there were `r tot_individuals`. 
 
-### Figure 2
+### Figure 2: Gender by age band
 
 
 ```{r fig 2, echo=FALSE, warning=FALSE, fig.alt="this is where we add alt text", out.width="100%"}
