@@ -48,7 +48,7 @@ This is where we will add some commentary to explain the message conveyed by the
 
 ### Figure 2: Gender by age band
 
-Commentary about the chart below. Another fascinating chart.
+Commentary about the chart below. Another fascinating chart with these very interesting things to say about it.
 
 ```{r fig 2, echo=FALSE, warning=FALSE, fig.alt="this is where we add alt text", out.width="100%"}
 fig2 <- plot_ly(df_gender_ageband_allyrs,
