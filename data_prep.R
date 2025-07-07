@@ -1,7 +1,7 @@
 # uncomment these lines if you need to install packages first.
 
 
-
+library(ggplot2)
 library(plotly)
 library(knitr)
 library(dplyr)
@@ -31,7 +31,7 @@ df_all_data$gender <- factor(df_all_data$gender, levels = c(1, 2, 9),
                              labels = c("male", "female", "not_stated"))
 
 df_all_data$offence_type <- factor(df_all_data$offence_type, levels = c(1, 2, 3),
-                                   labels = c("theft", "drugs", "motoring"))
+                                   labels = c("theft", "drugs", "vandalism"))
 
 
 # create named variables
